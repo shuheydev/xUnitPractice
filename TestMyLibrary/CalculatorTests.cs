@@ -21,5 +21,17 @@ namespace TestMyLibrary.Tests
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(8,4,4)]
+        public void Divide_SimpleValuesShouldCalculate(double x,double y,double expected)
+        {
+            //Arrange
+            //Act
+            double actual = Calculator.Divide(x, y);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
