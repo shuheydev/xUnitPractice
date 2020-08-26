@@ -6,15 +6,17 @@ namespace TestMyLibrary.Tests
 {
     public class CalculatorTests
     {
-        
-        [Fact]
-        public void Add_SimpleValuesShouldCalculate()
+
+        [Theory]
+        [InlineData(4, 3, 7)]
+        [InlineData(21, 5.25, 26.25)]
+        public void Add_SimpleValuesShouldCalculate(double x, double y, double result)
         {
             //Arrange
-            double expected = 5;
+            double expected = result;
 
             //Act
-            double actual = Calculator.Add(3, 2);
+            double actual = Calculator.Add(x, y);
 
             //Assert
             Assert.Equal(expected, actual);

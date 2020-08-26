@@ -4,7 +4,7 @@ namespace MyLibrary
 {
     public static class Calculator
     {
-        public static double Add(double x,double y)
+        public static double Add(double x, double y)
         {
             return x + y;
         }
