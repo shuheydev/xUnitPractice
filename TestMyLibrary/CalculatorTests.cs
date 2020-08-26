@@ -11,10 +11,9 @@ namespace TestMyLibrary.Tests
         [InlineData(4, 3, 7)]
         [InlineData(21, 5.25, 26.25)]
         [InlineData(double.MaxValue, 5, double.MaxValue)]//edge case
-        public void Add_SimpleValuesShouldCalculate(double x, double y, double result)
+        public void Add_SimpleValuesShouldCalculate(double x, double y, double expected)
         {
             //Arrange
-            double expected = result;
 
             //Act
             double actual = Calculator.Add(x, y);
