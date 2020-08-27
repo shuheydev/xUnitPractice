@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using MyLibrary;
 
-namespace TestMyLibrary.Tests
+namespace MyLibrary.Tests
 {
     public class CalculatorTests
     {
